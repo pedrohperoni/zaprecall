@@ -10,9 +10,7 @@
    justify-content:space-between;
    flex-direction:column;
    font-family: 'Roboto', sans-serif;
-
-   position: relative;
-
+   position: absolute;
 }
 
 .card span{

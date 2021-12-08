@@ -1,17 +1,21 @@
+import { useState } from "react";
 import Card from "./components/Card";
-import { Failure } from "./components/Failure";
+import Failure from "./components/Failure";
 import Homepage from "./components/Homepage";
-import Logo from "./components/Logo";
-import { Success } from "./components/Success";
+import Success  from "./components/Success";
 
 function App() {
+
+   const [home, setHome] = useState(false)
+
   return (
    <div className="App">
-      {/* <Homepage /> */}
-       <Logo />
-      {/* <Card /> */}
+      {(home)
+      ? <Homepage/>
+      : <Card />
+      }
       {/* <Success /> */}
-      <Failure />
+      {/* <Failure /> */}
    </div>
   );
 }
