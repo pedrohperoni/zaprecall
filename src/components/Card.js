@@ -11,23 +11,27 @@ export default function Card(){
    const [answerActive, setAnswerActive] = useState(false)
    const [turnAnswer, setTurnAnswer] = useState(true)
 
+   const [ currentQuestion, setCurrentQuestion ] = useState(1)
+
    const handleClickTurnNextCard = () => {
+      setCurrentQuestion(currentQuestion + 1)
       setFooterButtons(false);
       setAnswerActive(false);
       setTurnAnswer(true);
-      console.log("seta inicio")
+      console.log("Ir para a proxima pergunta add +1")
    }
 
    const handleClickFooterButton = () => {
       setFooterButtons(false);
       setTurnAnswer(false);
-      console.log("tirar botao aparecer texto")
+      console.log("Remover botoes de resposta, aparecer borda e aparecer botao prox pergunta")
+
    }
 
    const handleClickTurnAnswer = () => {
       setFooterButtons(true)
       setAnswerActive(true)
-      console.log("aparecer resposta")
+      console.log("Aparecer resposta e botoes de reposta")
    }
 
 
@@ -35,7 +39,7 @@ export default function Card(){
       <>
          <Logo />
          <div className="card">
-            <span>{deck[0].id}/{(deck.length)}</span>
+            <span>{currentQuestion}/{(deck.length)}</span>
 
             <h2>
                {(answerActive)
@@ -71,7 +75,7 @@ export default function Card(){
                   onClick={handleClickTurnNextCard}
                   />
             }
-            </div>
+         </div>
       </>
     
    )

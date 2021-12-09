@@ -2,7 +2,7 @@ import sad from '../assets/sad.png'
 import '../styles/results.css'
 import Logo from './Logo'
 
-export function Failure(){
+export default function Failure(){
    return(
       <div className="results">
       <Logo />

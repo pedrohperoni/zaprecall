@@ -6,16 +6,40 @@ import Success  from "./components/Success";
 
 function App() {
 
-   const [home, setHome] = useState(false)
+   const [home, setHome] = useState(true)
+   const [gameCompleted, setGameCompleted] = useState(false)
+   const [success, setSuccess] = useState(true)
+
+   const handleHomeClick = () => {
+      setHome(false);
+   }
+
+   const handleGameCompletion = () => {
+      setGameCompleted(true);
+   }
+
+   const handleSuccess = () => {
+      setSuccess(true);
+   }
+
+   const handleFailure = () => {
+      setSuccess(false)
+   }
 
   return (
    <div className="App">
-      {(home)
-      ? <Homepage/>
-      : <Card />
+      {(gameCompleted)
+         ? (success) 
+            ? <Success />
+            : <Failure />
+         : (home)
+            ? <Homepage handleHomeClick={handleHomeClick}/>
+            : <Card
+                  handleFailure={handleFailure}
+                  handleSuccess={handleSuccess}
+                  handleGameCompletion={handleGameCompletion}
+               />
       }
-      {/* <Success /> */}
-      {/* <Failure /> */}
    </div>
   );
 }
