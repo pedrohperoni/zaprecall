@@ -18,14 +18,6 @@ function App() {
       setGameCompleted(true);
    }
 
-   const handleSuccess = () => {
-      setSuccess(true);
-   }
-
-   const handleFailure = () => {
-      setSuccess(false)
-   }
-
   return (
    <div className="App">
       {(gameCompleted)
@@ -35,8 +27,8 @@ function App() {
          : (home)
             ? <Homepage handleHomeClick={handleHomeClick}/>
             : <Card
-                  handleFailure={handleFailure}
-                  handleSuccess={handleSuccess}
+                  success={success}
+                  setSuccess={setSuccess}
                   handleGameCompletion={handleGameCompletion}
                />
       }
