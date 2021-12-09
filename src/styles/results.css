@@ -21,3 +21,31 @@
    line-height:26px;
    text-align: center;
 }
+
+.tryAgainButton{
+   margin: 0 auto;
+   height:72px;
+   width: 345px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   padding: 24px 65px;
+   border-radius: 12px;
+   margin-top: 16px;
+   background-color: #fff;
+   border: 3px solid var(--yellow);
+
+}
+
+.tryAgainButton span{
+   font-size: 20px;
+   margin-right: 7px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   line-height: 23px;
+   color: #000;
+}
+
+.tryAgainButton:hover{
+   opacity: 0.5;
+}
