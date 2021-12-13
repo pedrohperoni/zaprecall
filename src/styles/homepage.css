@@ -1,39 +1,38 @@
-.homepage{
-   display:flex;
-   align-items:center;
-   justify-content:center;
-   flex-direction: column; 
-   font-family: 'Roboto', sans-serif;
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
 }
 
-.homepage img:first{
-   width:171px;
-   height:auto;
+.homepage img:first {
+  width: 171px;
+  height: auto;
 }
 
-.homeButton{
-   height:72px;
-   width: 345px;
-   display:flex;
-   align-items:center;
-   justify-content:center;
-   padding: 24px 65px;
-   border-radius: 12px;
-   margin-top: 220px;
-   background-color: #fff;
-   border: 3px solid var(--yellow);
-
+.homeButton {
+  height: 72px;
+  width: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 65px;
+  border-radius: 12px;
+  margin-top: 220px;
+  background-color: #fff;
+  border: 3px solid var(--yellow);
 }
 
-.homeButton span{
-   font-size: 20px;
-   margin-right: 7px;
-   font-family: 'Roboto', sans-serif;
-   font-weight: 700;
-   line-height: 23px;
-   color: #000;
+.homeButton span {
+  font-size: 20px;
+  margin-right: 7px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 23px;
+  color: #000;
 }
 
-.homeButton:hover{
-   opacity: 0.5;
+.homeButton:hover {
+  opacity: 0.5;
 }

@@ -1,51 +1,50 @@
-.card{
-   height: 575px;
-   width: 392px;
-   border-radius: 12px;
-   background-color: #fff;
-   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+.card {
+  height: 575px;
+  width: 392px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
 
-   display:flex;
-   align-items:center;
-   justify-content:space-between;
-   flex-direction:column;
-   font-family: 'Roboto', sans-serif;
-   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
 }
 
-.card span{
-   position: absolute;
-   right: 12px;
-   top: 12px;
+.card span {
+  position: absolute;
+  right: 12px;
+  top: 12px;
 }
 
-.card h1{
-   font-family: 'Roboto', sans-serif;
-   font-weight: 700;
-   font-size: 28px;
-   line-height: 32px;
-   margin: 49px;
-   text-align: center;
+.card h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 49px;
+  text-align: center;
 }
 
-
-.card h2{
-   margin-top: 19px;
+.card h2 {
+  margin-top: 19px;
 }
 
-.card p{
-   text-align: center;
-   margin: 49px;
-   font-family: 'Roboto', sans-serif;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 18.75px;
-   color: #000;
+.card p {
+  text-align: center;
+  margin: 49px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #000;
 }
 
-.turn{
-   width: 40px;
-   height: auto;
-   align-self: flex-end;
-   margin:12px;
+.turn {
+  width: 40px;
+  height: auto;
+  align-self: flex-end;
+  margin: 12px;
 }
